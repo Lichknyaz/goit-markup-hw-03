@@ -88,10 +88,10 @@ nav {
   padding: 0 15px;
 }
 
-/* .section {
+.section {
   padding-top: 120px;
   padding-bottom: 120px;
-} */
+}
 
 /* #endregion */
 
@@ -164,16 +164,18 @@ nav {
 
 /* #region Solutions */
 
+.solutions {
+  padding: 188px 0 188px;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
 .solutions .container {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark);
-  color: var(--white);
-  /* height: 600px; */
   align-items: center;
   justify-content: center;
   gap: 48px;
-  padding: 188px 0 188px;
 }
 
 .solutions-header {
@@ -203,13 +205,23 @@ nav {
 
 /* #region Overview */
 
+.overview {
+  padding: 120px 0 120px;
+}
+
 .overview .container {
   display: flex;
   flex-direction: row;
-  padding: 120px 0 120px;
+}
+.overview-list {
+  gap: 24px;
+}
+
+.overview-inner-list {
   flex-basis: calc((100% - 72px) / 4);
 }
-.overview-header.visually-hidden {
+
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -224,7 +236,7 @@ nav {
 /* #endregion */
 
 /* #region Our Team */
-.team .container {
+.team {
   background-color: var(--light);
   padding: 120px 0 120px;
 }
@@ -257,7 +269,7 @@ nav {
 
 /* #region Our Portfolio */
 
-.portfolio .container {
+.portfolio {
   padding: 120px 0 120px;
 }
 
@@ -271,33 +283,32 @@ nav {
 
 .examples-list {
   flex-basis: calc((100% - 48px) / 3);
-  /* border: 1px solid var(--dark); */
 }
 
 .examples-text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
-/* .portfolio-text {
-  padding-left: 16px;
-}
-.portfolio-third-header {
-  padding-left: 16px;
-} */
 /* #endregion */
 
 /* #region Footer */
 
-.footer .container {
-  display: flex;
-  background-color: var(--dark);
-  flex-direction: column;
+.footer {
   padding: 100px 0 100px;
+  background-color: var(--dark);
+}
+
+.footer .container {
+  /* display: flex; */
+  /* background-color: var(--dark); */
+  /* flex-direction: column; */
+  /* padding: 100px 0 100px; */
 }
 
 .footer .logo {
-  display: inline-block;
+  display: block;
   margin-left: 156px;
   margin-bottom: 16px;
 }
